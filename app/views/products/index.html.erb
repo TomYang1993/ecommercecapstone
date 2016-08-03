@@ -1,0 +1,14 @@
+<h1> These are my products ! </h1>
+
+ <% @product.each do |product| %>
+  <a href="/products/<%= product.id %>">
+   <div class="col-md-4 thumbnail">
+     <div>
+      <h2><%= product.name %></h2></div>
+
+      <div><%= product.price %></div>
+
+      <div><%= product.description %></div>
+
+    </div></a>
+ <% end %>
