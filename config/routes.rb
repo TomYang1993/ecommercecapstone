@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   post '/suppliers' => 'suppliers#create'
   get '/suppliers/:id' => 'suppliers#show'
 
-  get '/images' => 'images#new'
+  get '/images/new' => 'images#new'
   post '/images' => 'images#create'
 end

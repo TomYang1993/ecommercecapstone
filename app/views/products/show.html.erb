@@ -5,6 +5,11 @@
 <div><%= @product.price %></div>
 
 <div><%= @product.description%></div>
+<div class="products-show">
+ <% @product.images.each do |image| %>
+    <div>  <img src=<%= image.link %> ></div>
+  <% end %>
+</div>
 <div>
   <%= link_to "Delete the product!", "/products/#{@product.id}",method: :delete %>
 </div>

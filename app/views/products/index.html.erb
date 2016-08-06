@@ -1,5 +1,6 @@
 <h1> These are my products ! </h1>
 
+<div class="row products-index">
  <% @product.each do |product| %>
   <a href="/products/<%= product.id %>">
    <div class="col-md-4 thumbnail">
@@ -10,5 +11,8 @@
 
       <div><%= product.description %></div>
 
+      <div><img src= <%= product.images.first.link %>  ></div>
+
     </div></a>
  <% end %>
+</div>
